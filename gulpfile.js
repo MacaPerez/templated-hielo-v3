@@ -7,7 +7,6 @@ gulp.task('minify', function() {
   console.log('minifying js ...');
 
   return gulp.src('src/assets/js/*.js')
-    .pipe(concat('all.js'))
     .pipe(uglify())
     .pipe(gulp.dest('build/assets/js/'));
 });
