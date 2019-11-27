@@ -1,12 +1,12 @@
 {
   "name": "templated-hielo-v3",
   "version": "1.0.0",
-  "description": "Parte II de la PEC3 de Rendimiento (UOC) licencia CC 3.0",
+  "description": "Parte II de la PEC3 de Rendimiento (UOC). Template con licencia CC 3.0",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
+    "gulp-clean-css": "^4.2.0",
     "gulp-uglify": "^3.0.2"
   },
   "scripts": {
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/MacaPerez/templated-hielo-v3.git"
   },
   "keywords": [
-    "gulpJS"
+    "gulpJS, Performance, Automation"
   ],
   "author": "MacaPérez",
   "license": "ISC",
