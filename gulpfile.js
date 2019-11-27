@@ -1,9 +1,11 @@
-
+// Dependencias
 
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
+var pump = require('pump');
 var cleanCSS = require('gulp-clean-css');
 var imagemin = require('gulp-imagemin');
+
 
 // Minify JS
 
@@ -44,4 +46,10 @@ gulp.task('imgmin', () => {
 
     ]))
     .pipe(gulp.dest('images'))
+});
+
+gulp.task('watch', function() {
+    gulp.watch('src/js/*.js', ['minjs']);
+    gulp.watch('src/css/*.css', ['mincss']);
+    gulp.watch('src/images/*.{jpg,jpeg,png,gif}', ['imgmin']);
 });
